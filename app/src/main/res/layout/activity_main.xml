@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F7F7"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_background"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/doc_1" />
+
+                    <LinearLayout
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Good Morning!"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Afif!"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:background="@drawable/edittext_search_background"
+                        android:drawableEnd="@drawable/search_icon"
+                        android:ems="10"
+                        android:hint="Search something"
+
+                        android:inputType="textPersonName"
+                        android:paddingStart="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="14dp"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_category_1"
+                            android:orientation="horizontal">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="212dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical"
+                                        android:paddingStart="16dp"
+                                        android:paddingTop="10dp">
+
+                                        <TextView
+                                            android:id="@+id/textView16"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="Emergency Help"
+                                            android:textColor="#26273a"
+                                            android:textSize="16sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/textView15"
+                                            android:layout_width="200dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="contact for proffesional help" />
+
+                                        <Button
+                                            android:id="@+id/button15"
+                                            android:layout_width="100dp"
+                                            android:layout_height="48dp"
+                                            android:layout_weight="1"
+                                            android:text="Call Now"
+                                            android:textSize="10sp" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/imageView13"
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:layout_gravity="bottom"
+                                        android:layout_weight="1"
+                                        app:srcCompat="@drawable/docillustrationcropped" />
+                                </LinearLayout>
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Maintain Your Health"
+                            android:textColor="#26273a"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+
+                            android:gravity="fill_horizontal"
+
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <LinearLayout
+
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/background_category_3"
+
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewfifth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:contentDescription="TODO"
+                                    app:srcCompat="@drawable/ic_2" />
+
+                                <TextView
+                                    android:id="@+id/textViewfifth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cardio"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/background_category_1"
+
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewfirst"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    app:srcCompat="@drawable/ic_1" />
+
+                                <TextView
+                                    android:id="@+id/textViewfirst"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cardio"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/background_category_1"
+
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewsecond"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    app:srcCompat="@drawable/ic_1" />
+
+                                <TextView
+                                    android:id="@+id/textViewsecond"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cardio"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/background_category_2"
+
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewthird"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:contentDescription="TODO"
+                                    app:srcCompat="@drawable/ic_2" />
+
+                                <TextView
+                                    android:id="@+id/textViewthird"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cardio"
+                                    android:textAlignment="center"
+                                    android:textColor="#ffffff" />
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/background_category_3"
+
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewforth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:contentDescription="TODO"
+                                    app:srcCompat="@drawable/ic_3" />
+
+                                <TextView
+                                    android:id="@+id/textViewforth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cardio"
+                                    android:textAlignment="center"
+                                    android:textColor="#FFFFFF" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/latest_news"
+                            android:textColor="#26273a"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="See all"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#ff5300"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="14dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#FFFFFF"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageViewetwelves"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/background_1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/textViewtwelves"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Americans are stuck in unhealthy pandemic habits. Here's how to reboot"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textViewtwelvesbottom"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Click me for more detail..."
+                                        android:textStyle="italic" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                android:scaleType="centerCrop"
+
+                                <ImageView
+                                    android:id="@+id/imageVieweleven3"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/background_2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/textView13"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Americans are stuck in unhealthy pandemic habits. Here's how to reboot"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textViewnew"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Click me for more detail..."
+                                        android:textStyle="italic" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#FFFFFF"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageVieweleven"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/background_1" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:id="@+id/textViewthirteen"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Americans are stuck in unhealthy pandemic habits. Here's how to reboot"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/textViewnewone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Click me for more detail..."
+                                        android:textStyle="italic" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
